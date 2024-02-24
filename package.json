@@ -22,6 +22,9 @@
   "author": "Griffin Johnston",
   "license": "MIT",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
