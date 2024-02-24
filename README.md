@@ -1,20 +1,7 @@
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-
 # The Official Behold Widget for React
 
-<div align="center">
-  <a href="https://behold.so/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BeholdSocial/behold-react/main/readme-images/thumbnail-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BeholdSocial/behold-react/main/readme-images/thumbnail-light.png">
-      <img src="https://raw.githubusercontent.com/BeholdSocial/behold-react/main/readme-images/thumbnail-light.png" alt="Behold" 
-      width="100%"
-      height="auto">
-    </picture>
-  </a>
-</div>
-
-## About
+[![Behold](https://img.shields.io/badge/Behold-e8ebd7.svg?style=for-the-badge&logo=https://raw.githubusercontent.com/BeholdSocial/behold-react/main/readme-images/behold.svg&link=https://behold.so)](https://behold.so)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 This package contains a React version of the [Behold embedded widget](https://behold.so/docs/widget/). It is a lightweight convenience wrapper around the core Behold widget web component, and allows easy integration into your React projects.
 
