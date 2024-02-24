@@ -31,7 +31,7 @@ function BeholdWidget(props: { feedId: string; onLoad?: Function }) {
 
 export default BeholdWidget
 
-declare global {
+declare module "react/jsx-runtime" {
   namespace JSX {
     interface IntrinsicElements {
       "behold-widget": {
