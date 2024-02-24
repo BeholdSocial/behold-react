@@ -7,14 +7,14 @@ import { useEffect, useRef } from "react"
  * @property {function} [onLoad] Function to run after initial render
  */
 function BeholdWidget(props: { feedId: string; onLoad?: Function }) {
-  const ref = useRef(null)
+  const ref = useRef<HTMLElement>(null)
 
   useEffect(() => {
-    // if (ref.current) {
-    //   ref.current.addEventListener("load", () => {
-    //     if (props.onLoad) props.onLoad()
-    //   })
-    // }
+    if (ref.current) {
+      ref.current.addEventListener("load", () => {
+        if (props.onLoad) props.onLoad()
+      })
+    }
     const existingScriptEl = document.querySelector(
       '[src="https://w.behold.so/widget.js"]'
     )
@@ -26,15 +26,7 @@ function BeholdWidget(props: { feedId: string; onLoad?: Function }) {
     document.body.appendChild(scriptEl)
   }, [])
 
-  return (
-    <behold-widget
-      ref={ref}
-      onLoad={() => {
-        if (props.onLoad) props.onLoad()
-      }}
-      feed-id={props.feedId}
-    />
-  )
+  return <behold-widget ref={ref} feed-id={props.feedId}></behold-widget>
 }
 
 export default BeholdWidget

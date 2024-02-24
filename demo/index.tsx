@@ -8,7 +8,7 @@ const root = createRoot(rootElement as HTMLElement)
 root.render(
   <StrictMode>
     <BeholdWidget
-      onLoad={() => console.log("React load event")}
+      onLoad={() => console.log("Loaded!")}
       feedId="L7mnQCHvZeMZLbNXmJll"
     />
   </StrictMode>
