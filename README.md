@@ -60,7 +60,7 @@ All configuration and customization is handled in the Behold admin. When you mak
 This component emits a load event after its initial render. It can be used as follows:
 
 ```js
-<BeholdWidget on:load={() => console.log("Loaded!")} feedId="YOUR_FEED_ID" />
+<BeholdWidget onLoad={() => console.log("Loaded!")} feedId="YOUR_FEED_ID" />
 ```
 
 ## A note about SSR
